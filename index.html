@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
+<head>
+  <meta charset="utf-8">
+  <title>ATR Play and Make Your Own 2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="keywords" content="HTML,CSS,Javascript,Make your own 2048,Play 2048">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="2048 game"/>
+  <meta property="og:description" content="Play Udacity 2048. Then, make your own 2048 game in Udacity's 2 hour mini course for programming beginners!"/>
+  <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">ATR'S 2048 Version 2 </h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">
+      <a class="restart-button">New Game</a>
+      Use the arrow keys to slide  tiles. Combine similar tiles to create new ones.</p>
+      
+    </div>
+
+    <div class="pre-game">
+      <p class="learn">Its been a busy week and I’ve been trying to find new ways to “Play” with ATRs’ images and themes.   This latest 2048 theme is a slight modification on the first one.   The text is more readable and thanks to Lydia Rybczynski, we have a much better background picture for text to appear on. </p><a class="learn" href="https://www.udacity.com/course/ud248">Take the Class!</a>
+    </div>
+
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a href="http://www.udacity.com/course/ud248/"class="learn learn-low">Take the Class!</a>
+          <a class="retry-button">Play Again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+
+    <p class="game-explanation">
+      <strong class="important">Come Out And Play!</strong> What I’ve been trying to do, among other things, is find a functional Rubik cube for ATR to put its art on.   What I’ve discovered is a ton of art aps, game aps and learning materials you can customize with your own images.   A few that I’ve not shared yet will appear over the next few days as my time as host comes to an end.    But I hope, if I’ve not been relevant in what I’m doing here, I’ve at least been entertaining. </p> 
+     <p> <a href="https://www.udacity.com/course/ud248" target="_blank">Make your own 2048</a>. No programming experience is required and in less than half an hour you'll dig into the source code, make some changes, and have your own version of the game to share.
+    </p>
+    <hr>
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same value touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    This is a modified version of the <a href="http://gabrielecirulli.github.io/2048/" target="_blank">original game</a> created by Gabriele Cirulli.
+    </p>
+
+    <p>     <strong class="important">Theme ideas para mis amigas y amigos en ATR!</strong></p> <p>When I’m done I hope a few of you will grab this game app, modify it, improve and launch it for your own purposes.   You really are a fun group to spend time with.  Be Of Good Cheer!  </p> <p> Love To All!</p>
+<p> Cusper Lynn – Your <a href="http://hellbentpress.com/target="_blank"> HellBent Author </a>;) <p/>
+
+
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>
